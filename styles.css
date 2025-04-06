@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; /* Default font for body */
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: #007bff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font for logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for links */
+}
+
+.nav-links li a:hover {
+    color: #007bff;
+}
+
+.menu-toggle,
+.menu-close {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.menu-close {
+    display: none;
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#about {
+    padding-top: 8rem;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif; /* Poppins for headers */
+}
+
+#about p {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+	/* Make the paragraph wider */
+    width: 80%; /* Adjust this percentage to make it as wide as you like */
+    margin: 0 auto; /* Center the paragraph */
+    padding: 1rem; /* Add padding for space inside */
+    line-height: 1.6;
+    max-width: 1000px; /* Limit the max width for readability */
+}
+
+#domains h2,
+#contact h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.domains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+	text-decoration: none; /* Remove underline */
+    color: inherit; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 200px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 2rem;
+    }
+}
