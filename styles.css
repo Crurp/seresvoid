@@ -90,16 +90,14 @@ section {
 
 #about p {
     font-size: 1.3rem;
-    max-width: 600px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-	/* Make the paragraph wider */
     width: 80%; /* Adjust this percentage to make it as wide as you like */
+    max-width: 1000px; /* Limit the max width for readability */
     margin: 0 auto; /* Center the paragraph */
+    font-family: 'Roboto', sans-serif;
     padding: 1rem; /* Add padding for space inside */
     line-height: 1.6;
-    max-width: 1000px; /* Limit the max width for readability */
 }
+
 
 #domains h2,
 #contact h2 {
