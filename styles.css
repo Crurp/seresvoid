@@ -139,6 +139,16 @@ section {
     font-family: 'Poppins', sans-serif;
 }
 
+#quantum-info {
+    margin-top: 80px; /* Adjust the value based on your navbar height */
+}
+#cybersecurity-info {
+    margin-top: 80px; /* Adjust the value based on your navbar height */
+}
+#rf-info {
+    margin-top: 80px; /* Adjust the value based on your navbar height */
+}
+
 #contact {
     text-align: center;
 }
